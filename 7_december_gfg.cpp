@@ -5,6 +5,10 @@ public:
     int KthSmallestElement(Node *root, int K)
     {
         // add code here.
+        int count = 0;
+        int ans = -1;
+        inorder(root, K, count, ans);
+        return ans;
 
     }
     void inorder(Node *root, int K, int &count, int &ans)
